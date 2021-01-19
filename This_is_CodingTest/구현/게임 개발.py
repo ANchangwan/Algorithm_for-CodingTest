@@ -27,8 +27,8 @@ turn_time = 0
 while True:
     # 왼쪽으로 회전
     turn_left()
-    nx = x + dx[direction]
-    ny = y + dy[direction]
+    nx = x + dx[d]
+    ny = y + dy[d]
     if game_map[nx][ny] == 0 and array[nx][ny] == 0:
         game_map[nx][ny] = 1
         x = nx
