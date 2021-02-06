@@ -9,4 +9,14 @@
 <strong>시뮬레이션</strong> 문제에서 제시한 알고리즘을 한 단계씩 차례대로 직접 수행하는 문제 유형</br></br>
 
 <a href = "https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EA%B5%AC%ED%98%84">구현알고리즘 소스폴더</a></p>
+
+<h2><li>탐색 알고리즘 DFS % BFS</li></h2>
+ <h3>1. DFS</h3>
+<p>
+ DFS는 Depth-First Search, 깊이 운선 탐색이라고도 부르며, 그래프에서 깊은 부분을 우선적으로 탐색하는 알고리즘이다.</br>
+ <h4>그래프의 기본구조</h4>
+ 그래프는  노드(Node)와 간선(Edge)으로 표현되며 이때 노드를 정점(Vertex)이라고도 말한다. 그래프 탐색이란 하나의 노드를 시작으로 다수의 노드를 방문하는 것을 말한다.
+ 또한 두 노드가 간선으로 연결되어 있다면 '두노드는 인접하다(Adjacent)'라고 표현한다.
+</p>
+
 </ol>
