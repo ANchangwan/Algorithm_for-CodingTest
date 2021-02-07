@@ -35,6 +35,6 @@ for i in range(1,n+1):
         print(i)
         check == True
 # 만약 최단 거리가 k인 도시가 없다면, -1 출력
-if chek == False:
+if check == False:
     print(-1)
             
