@@ -87,10 +87,11 @@
    
    
 </p>
-<li><h3>정렬</h3></li>
+<h2><li>정렬</li></h2>
 <p>
   정렬이란 데이터를 특정한 기준에 따라서 순서대로 나열하는 것을 말한다.</br>
   <a href="https://github.com/ANchangwan/-Algorithm-for-Python/tree/master/sort_algorithm/bubble_sort">정렬 알고리즘</a>
+  <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%A0%95%EB%A0%AC">정렬 소스 폴더</a>
 </p>
 
 </ol>
