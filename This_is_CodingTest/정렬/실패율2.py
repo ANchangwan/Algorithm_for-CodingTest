@@ -1,11 +1,3 @@
-def count_function(x, stage):
-    count = 0
-    for i in range(len(stage)):
-        if x == stage[i]:
-            count += 1
-
-    return count
-
 
 def solution(N, stages):
     answer = []
@@ -25,4 +17,3 @@ def solution(N, stages):
     answer = [i[0] for i in answer]
     return answer
 
-print(solution(5,[3,4,2,1,5]))
