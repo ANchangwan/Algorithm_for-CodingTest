@@ -6,7 +6,7 @@ n = int(input())
 heap = []
 for i in range(n):
     card = int(input())
-    heapq.heappush(heap.card)
+    heapq.heappush(heap,card)
 
 result = 0
 
