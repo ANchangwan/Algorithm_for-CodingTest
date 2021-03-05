@@ -90,7 +90,35 @@
 <h2><li>정렬</li></h2>
 <p>
   정렬이란 데이터를 특정한 기준에 따라서 순서대로 나열하는 것을 말한다.</br>
-  <a href="https://github.com/ANchangwan/-Algorithm-for-Python/tree/master/sort_algorithm/bubble_sort">정렬 알고리즘</a>
+  <h3>heapq </h3>
+  <h4>1. heapq</h4></br>
+   파이썬에서는 힙(heap) 기능을 위해 heapq 라이브러리를 제공한다. heapq는 다익스트라 최단 경롤 알고리즘을 포함해 다양한  알고리즘에서 우선순위 큐 기능을 구현하고자 할 때 사용한다. 
+  heapq 외에도 PriorityQueue 라이브러리를 사용할 수 있지만, 코딩 테스트 환경에서는 보통 heapq가 더 빠르게 동작한다.
+   파이썬의 힙은 최소 힙으로 구성되어 있으면 heappop을 했을 때 리스트의 최소값을 출력하는 걸 보장한다. 시간 복잡도 O(NlogN이다.)
+  <pre>
+  import heapq
+  
+  def heapsort(lst):
+    heap = []
+    result = []
+    for x in lst:
+      heapq.heappush(heap, x)
+    for _ in range(len(heap)):
+      result.append(heapq.heappop(heap))
+    return result
+    
+  result = heapsort([6,5,8,9,7,25,2,1,3])
+  print(result)
+  
+  출력 : 1,2,3,5,6,7,8,9,25
+  </pre>
+  <h3>2. heapq vs sort()</h3>
+  
+  두개의 내장함수는 NlogN을 보장하지만 두개의 차이점은 sort 함수는 모든 리스트 값을 정렬 시킨다. 하지만 heapq는 첫번째 원소를 무조건 최소값을 보장하지만 두번째 값이 두번째로 작은 값인지
+  보장하지 않는다. 단지 첫번째 값이 가장 작은 값을 보장한다는 장점이 있다.
+  
+  
+  <a href="https://github.com/ANchangwan/-Algorithm-for-Python/tree/master/sort_algorithm/bubble_sort">정렬 알고리즘</a></br>
   <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%A0%95%EB%A0%AC">정렬 소스 폴더</a>
 </p>
 
