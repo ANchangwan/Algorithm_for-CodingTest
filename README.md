@@ -129,5 +129,6 @@
   O(logN)</br></br>
   한번 확인할 때마다 확인하는 원소의 개수가 절반씩 줄어든다는 점에서 시간 복잡도가 O(logN)이다. 절반씩 데이터를 줄어들도록 만든다느 점은 앞서 다룬 퀵 정렬과 공통점이 있다.</br></br>
   <a href= "https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/Binary_search.py">이진탐색코드</a>
+  <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89">이진탐색 소스 </a>
 </p>
 </ol>
