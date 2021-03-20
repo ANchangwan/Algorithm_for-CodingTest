@@ -136,6 +136,16 @@
     <li><strong>bisect_right</strong> : 정렬된 순서를 유지하도록 리스트a에 데이터 x를 삽입할 가장 오른쪽 인덱스를 찾는 메서드</li>
   </ul>
   </br></br>
+  <pre>
+    from bisect import bisect_left, bisect_right
+    </br>
+    a = [1,2,4,4,8]
+    x = 4
+    </br>
+    print(bisect_left(a,x))
+    print(bisect_right(a,x))
+  </pre>
+  </br></br>
   <a href= "https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/Binary_search.py">이진탐색코드</a></br>
   <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89">이진탐색알고리즘 소스폴더 </a>
 </p>
