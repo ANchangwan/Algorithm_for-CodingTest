@@ -128,6 +128,13 @@
 <p>
   O(logN)</br></br>
   한번 확인할 때마다 확인하는 원소의 개수가 절반씩 줄어든다는 점에서 시간 복잡도가 O(logN)이다. 절반씩 데이터를 줄어들도록 만든다느 점은 앞서 다룬 퀵 정렬과 공통점이 있다.</br></br>
+  <h3>bisect</h3>
+  bisect 라이브러리는 '정렬된 배열'에서 특정한 원소를 찾아야 할 때 매우 효과적으로 사용된다. bisect 라이브러리에서는 <strong>bisect_left()</strong>,<strong>bisect_right()</strong> 함수가 가장 중요하게 사용되며, 이 두 함수는 시간 복잡도(logN)에 등작한다.
+  <ul>
+    <li><strong>bisect_left(a,x)</strong> : 정렬된 순서를 유지하면서 리스트 a에 데이터를 x를삽입할 가장 왼쪽 인덱스를 찾는 메서드 </li>
+    <li><strong>bisect_right</strong> : 정렬된 순서를 유지하도록 리스트a에 데이터 x를 삽입할 가장 오른쪽 인덱스를 찾는 메서드</li>
+  </ul>
+  </br></br>
   <a href= "https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/Binary_search.py">이진탐색코드</a></br>
   <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89">이진탐색알고리즘 소스폴더 </a>
 </p>
