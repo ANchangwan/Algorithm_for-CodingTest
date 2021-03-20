@@ -144,6 +144,10 @@
     </br>
     print(bisect_left(a,x))
     print(bisect_right(a,x))
+    </br>
+    결과</br>
+    2
+    4
   </pre>
   </br></br>
   <a href= "https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/Binary_search.py">이진탐색코드</a></br>
