@@ -96,17 +96,17 @@
   heapq 외에도 PriorityQueue 라이브러리를 사용할 수 있지만, 코딩 테스트 환경에서는 보통 heapq가 더 빠르게 동작한다.
    파이썬의 힙은 최소 힙으로 구성되어 있으면 heappop을 했을 때 리스트의 최소값을 출력하는 걸 보장한다. 시간 복잡도 O(NlogN이다.)
   <pre>
-    import heapq
+    import heapq</br>
     def heapsort(lst):
       heap = []
-      result = []
+      result = []</br>
       for x in lst:
-        heapq.heappush(heap, x)
+        heapq.heappush(heap, x)</br>
       for _ in range(len(heap)):
-        result.append(heapq.heappop(heap))
-      return result
-    result = heapsort([6,5,8,9,7,25,2,1,3])
-    print(result)
+        result.append(heapq.heappop(heap))</br>
+      return result</br>
+    result = heapsort([6,5,8,9,7,25,2,1,3])</br>
+    print(result)</br>
     출력 : 1,2,3,5,6,7,8,9,25
   </pre>
   <h3>2. heapq vs sort()</h3>
