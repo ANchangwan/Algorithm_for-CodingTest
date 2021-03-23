@@ -151,6 +151,20 @@
   </pre>
   </br></br>
   <a href= "https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/Binary_search.py">이진탐색코드</a></br>
-  <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89">이진탐색알고리즘 소스폴더 </a>
+  <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89">이진탐색알고리즘 소스폴더 </a></br>
+  
+  <h2><li>다이나믹 프로그래밍</li></h2>
+  <ul>
+    <li>다이나믹 프로그래밍은 <strong>메모리를 적절히 사용하여 수행 시간 효율성을 비약적으로 향상시키는 방법</strong>입니다.</li>
+    <li><u>이미 계산된 결과(작은 문제)는 별도의 메모리 영역에 저장</u>하여 다시 계산하지 않도록 합니다.</li>
+    <li>다이나믹 프로그래밍의 구현은 일반적으로 두가지 방식(탑다운과 보텀업)으로 구성됩니다.</li>
+    <li>다이나믹 프로그래밍은 <strong>동적 계획법</strong>이라고도 부릅니다.</li>
+    <li><일반적인 프로그래밍 분야에서의 동적(Dynamic)이란 어떤 의미를 가질까요?</li>
+      <ul>
+          <li>자료구조에서 동적 할당(Dynmic Allocation)은 '프로그램이 실행되는 도중에 실행에 필요한 메모리를 할당하는 기법'을 의미합니다.</li>
+          <li>반면에 다아나믹 프로그래밍에서 '다이나믹'은 별다른 의미 없이 사용된 단어입니다.</li>
+      </ul>
+  </ul>
+  
 </p>
 </ol>
