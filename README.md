@@ -194,7 +194,7 @@
         </ul>
   </ul>
   <pre>
-  탑다운</br>
+  <탑다운></br>
   d = [0] * 100</br>
   def pibo(x):
     if x == 1 or x == 2:
@@ -203,7 +203,7 @@
       return d[x]
     d[x] = pibo(x-1) + pibo(x-2)
     return d[x]</br>
-  보텀업</br>
+  <보텀업></br>
   d = [0] * 100</br>
   d[1] = 1
   d[2] = 2
