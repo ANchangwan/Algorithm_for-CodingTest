@@ -193,6 +193,28 @@
           <li>한 번 계산된 결과를 담아 놓기만 하고 다이나믹 프로그래밍을 위해 활요하지 않을 수도 있습니다.</li>
         </ul>
   </ul>
+  <pre>
+  탑다운</br>
+  d = [0] * 100</br>
+  def pibo(x):
+    if x == 1 or x == 2:
+      return 1
+    if d[x] != 0:
+      return d[x]
+    d[x] = pibo(x-1) + pibo(x-2)
+    return d[x]</br>
+  보텀업</br>
+  d = [0] * 100</br>
+  d[1] = 1
+  d[2] = 2
+  n = 99</br>
+  for i in range(3,n-1):
+    d[i] = d[i-1] + d[i+2]
+  </br>
+  print(d[n])
+  
+  
+  </pre>
   </br></br>
   <a href = "https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">다이나믹 프로그래밍 소스폴더</a>
 </p>
