@@ -18,7 +18,7 @@ def dijstra(start):
 
     heapq.heappush(q,(0,start))
     distance[start] = 0
-    for i in graph[start]:
+    while q:
         dist, now = heappop(q)
         if distance[now] < dist:
             continue
