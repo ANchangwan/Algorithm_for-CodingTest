@@ -218,4 +218,44 @@
   </br></br>
   <a href = "https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">다이나믹 프로그래밍 소스폴더</a>
 </p>
+<h2><li>최단 경로</li></h2>
+<ol>
+    <li><h3>다익스트라 알고리즘</h3></li>
+    <p>
+         다익스트라(Dijkstra) 최단 경로 알고리즘은 그래프에서 여러개의 노드가 있을 때, 특정한 노드에서 출발하여
+        다른 노드로 가는 각각의 최단 경로를 구해주는 알고리즘이다. 다익스트라는 '음의 간선'이 없을 때 정상적으로 동작한다.<br>
+        다익스트라는 기본적으로 그리디 알고리즘으로 분류된다.<br>
+        <pre>
+            <진행과정>
+            1. 출발 노드를 설정한다
+            2. 최단거리를 테이블에 초기화한다.
+            3. 방문하지 않은 노드 중에서 최단 거리가 가장 짧은 노드를 선택한다.
+            4. 해당 노드를 거쳐 다른 노드로 가는 비용을 계산하여 최단 거리 테이블을 갱신한다.
+            5. 위 과정에서 3과4번을 반복한다.
+        </pre>
+        다익스트라는 두가지 방법으로 구현이 가능하다. <br>
+        1. 간단한 다익스트라 알고리즘 <br>
+        시간복잡도<br>
+        시간 복잡도를 O(v<sup>2</sup>)의 시간복잡도를 보인다. 노드의 개수가 5000개 이하라면 상관 없지만 10,000개가 넘어가면 알고리즘을 해결하기 어렵다.<br>
+        <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B0%84%EB%8B%A8%ED%95%9C%20%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.py">소스 코드</a><br>
+        2. 개선된 다익스트라 알고리즘<br>
+         개선된 방식을 heapq 자료구조를 사용해서 해결한다. 가장 작은 값을 출력하는 heapq의 방식을 이용한다 <br>
+         시간 복잡도 <br>
+         ElogV를 만족한다.(v = 노드의 개수, E = 간선의 개수)<br>
+         <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B0%A9%EB%B2%952.%20%EA%B0%9C%EC%84%A0%EB%90%9C%20%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.py">소스 코드</a><br>
+    </p>
+    <li><h3>플로이드 워셜 알고리즘</h3></li>
+    <p>
+        플로이드 워셜 알고리즘은 다이나믹 프로그래밍 이용하여 단계마다 '거쳐 가는 노드'를 기준으로, 최단거리 테이블을 갱신하는 방식으로 동작합니다. 다음의 점화식만 제대로 기억해 놓는다면 큰 어려움 없이 구현할 수 있습니다.<br>
+        <br>D<sub>ab</sub> = min(D<sub>ab</sub>, D<sub>ak</sub>+D<sub>ab</sub>)
+        <pre>
+            for k in range(1,n+1):
+                for a in range(1,n+1):
+                    for b in range(1,n+1):
+                        adj[a][b] = min(adj[a][b], adj[a][k] + adj[k][b])
+        </pre>
+        <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/blob/main/This_is_CodingTest/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%9B%8C%EC%85%9C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.py">플로이드 워셜 알고르즘 코드</a><br><br>
+    </p>
+    <a href="https://github.com/ANchangwan/Algorithm_for-CodingTest/tree/main/This_is_CodingTest/%EC%B5%9C%EB%8B%A8%20%EA%B2%BD%EB%A1%9C/Algorithm_question">최단경로소스 폴더</a>
+</ol>
 </ol>
