@@ -37,4 +37,4 @@ for edge in edges:
         union_parent(parent,x,y)
         result += cost
 
-print(result - total)
+print(total - result)
