@@ -42,5 +42,21 @@ for i in range(1,m+1):
 
 print(result)
 
+# 3
+from collections import Counter
+
+n,m = map(int, input().split())
+
+data = list(map(int, input().split()))
+
+num_dict = Counter(data)
+
+result = 0
+for i in num_dict.keys():
+    n-= num_dict[i]
+    result += num_dict[i] * n
+
+print(result)
+
 
 
