@@ -35,3 +35,23 @@ if summary == 0 :
     print("LUCKY")
 else:
     print("READY")
+
+#3
+n = input()
+length = (len(n)//2)
+first = n[0:length]
+second = n[length:]
+
+first_sum = []
+for i in first:
+    first_sum.append(int(i))
+
+second_sum = []
+for i in second:
+    second_sum.append(int(i))
+
+
+if sum(first_sum) == sum(second_sum):
+    print("LUCKY")
+else:
+    print("READY")
