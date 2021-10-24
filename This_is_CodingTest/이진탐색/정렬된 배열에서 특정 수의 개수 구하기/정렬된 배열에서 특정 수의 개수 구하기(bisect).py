@@ -1,3 +1,4 @@
+# 1
 from bisect import bisect_left,bisect_right
 
 def count_by_range(array,left_value,right_value):
@@ -15,3 +16,20 @@ if count == 0:
     print(-1)
 else:
     print(count)
+    
+    
+
+# 2
+from bisect import bisect_right, bisect_left
+n, target = map(int, input().split())
+data = list(map(int, input().split()))
+
+right = bisect_right(data, target)
+left = bisect_left(data, target)
+result = right - left
+
+if result:
+    print(result)
+else:
+    print(-1)
+
