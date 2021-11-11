@@ -1,7 +1,7 @@
 n,m = map(int,input().split())
 data = [] # 초기 맵 리스트
 temp = [[0] * m for _ in range(n)] # 벽을 설치한 뒤의 맵 리스트
-
+result = 0
 for _ in range(n):
     data.append(list(map(int,input().split())))
 
@@ -13,7 +13,7 @@ def virus(x,y):
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
-        if nx>=0 and n> nx and ny>=0 and m>=ny:
+        if nx>=0 and n> nx and ny>=0 and m > ny:
             if temp[nx][ny] == 0:
                 temp[nx][ny] = 2
                 virus(nx,ny)
@@ -43,7 +43,7 @@ def dfs(count):
                     virus(i,j)
         # 안전 영역의 최댓값 계산
         result = max(result, get_score())
-        return
+        return result
 
     # 빈 공간에 울타리 설치
     for i in range(n):
