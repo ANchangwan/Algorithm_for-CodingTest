@@ -23,7 +23,7 @@ def dfs(x, y):
 result = 0
 for i in range(n):
     for j in range(m):
-        if ice_cream[i][j] == True:
+        if dfs(i,j) == True:
             result += 1
 
 print(result)
